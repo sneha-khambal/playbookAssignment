@@ -1,34 +1,31 @@
-
-
 <div class="container"
-  style="display: flex;flex-direction: row; background-color: black;max-width: 100%;margin-top: 5%;">
-  <div class="slides" >
-    <div>
-      <div class=" col-sm-6 drag-item  " id="yellow"  draggable="true" style="background-color:yellow ;" #dragItem > </div>
-      <div class=" col-sm-6 drag-item  " id="blue"   draggable="true" style="background-color:blue ;" #dragItem > </div>
-      <div class=" col-sm-6 drag-item  "  id="green"  draggable="true" style="background-color:green ;" #dragItem > </div>
-      <div class=" col-sm-6 drag-item  "  id="red"  draggable="true" style="background-color:red;" #dragItem > </div>
-       
-       
-    </div>
+  style="display: flex;flex-direction: row; background-color: black;max-height:auto;max-width: 100%;margin-top: 5%;">
+  <!-- slides -->
+  <div class="slides"><div>
+    <div class="  drag-item" id="yellow" draggable="true" style="background-color:yellow;"></div>  
+    <div class="  drag-item" id="blue" draggable="true" style="background-color:blue;"></div>   
+    <div class="  drag-item" id="green" draggable="true" style="background-color:green;"></div>  
+    <div class="  drag-item" id="red" draggable="true" style="background-color:red;"></div>  
+    <div class="  drag-item" id="orange" draggable="true" style="background-color:orange;"></div>  
+    <div class="  drag-item" id="gray" draggable="true" style="background-color:gray;"></div>  
   </div>
-  <div class=" droppable" style="display: flex;">
-    <div class="play-box bg-white "  #playBox ></div>
-    <div class="play-box bg-white " #playBox ></div>
-    <div class="play-box bg-white " #playBox ></div>
+</div>
+  <!-- playbox -->
+  <div class=" droppable">
+    <span class="play-box" #playBox></span>
+    <span class="play-box" #playBox></span>
+    <span class="play-box" #playBox></span>
   </div>
-  <div class="sketches">
+
+  <!-- images -->
+  <div class="slides">
     <div>
-      <div class="drag-item1" style="background-image: url('./assets/images/img1.jpg');" draggable="true" #dragItem1>
-      </div>
-      <div class="drag-item1" style="background-image: url('./assets/images/img7.jpg');" draggable="true" #dragItem1>
-      </div>
-      <div class="drag-item1" style="background-image: url('./assets/images/img4.jpg');" draggable="true" #dragItem1>
-      </div>
-      <div class="drag-item1" style="background-image: url('./assets/images/img5.jpg');" draggable="true" #dragItem1>
-      </div>
-      <div class="drag-item1" style="background-image: url('./assets/images/img6.jpg');" draggable="true" #dragItem1>
-      </div>
+      <div class="drag-item1" id="img1" style="background-image: url('./assets/images/img1.jpg');" draggable="true" > </div>
+      <div class="drag-item1" id="img2" style="background-image: url('./assets/images/img3.jpg');" draggable="true" ></div>
+       <div class="drag-item1" id="img3" style="background-image: url('./assets/images/img5.jpg');" draggable="true" ></div>
+      <div class="drag-item1" id="img4" style="background-image: url('./assets/images/img6.jpg');" draggable="true" ></div>
+      <div class="drag-item1" id="img5" style="background-image: url('./assets/images/img8.jpg');" draggable="true" ></div>
+      <div class="drag-item1" id="img6" style="background-image: url('./assets/images/img7.jpg');" draggable="true"></div>
     </div>
   </div>
 </div>

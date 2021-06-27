@@ -3,8 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-
- 
  
 .slides{
  max-height: 500px;
@@ -14,51 +12,25 @@
   display: flex;
   flex-direction: column;
 }
- .slide-item{
-   height: auto;
-     width: 230px;
-     margin: 10px;
-     
-     background-color: white;
-     margin: 5%;
-     /* margin-left: 2%; */
-     border-radius: 5px;
-    
-     
+   
+.drag-item{
+  height: 180px;
+  width: 200px;
+  margin: 10px;
+  /* margin-left: 20%; */
+border-radius: 5px;
+ border: 4px solid white;
+ border: 2px solid white;
+ background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+border: 2px solid white;
+box-shadow:1px 2px 0px 2px #857272; 
+margin-bottom:5px;  
  }
- .drag-item{
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-    /* margin-left: 10%; */
-    position: relative;
-    border: 2px solid white;
-    box-shadow:1px 2px 0px 2px #888888;
-    border-radius: 5px;
-   border: 4px solid white;
-  
- }
- .sketches{
-  display: flex;
-  flex-direction: column;
-    height: 500px;
-    width: 20%;
-    overflow: scroll;
-    overflow-x: hidden;
-  
- }
- .sketch-iem{
-  height: 100px;
-  width: 100px;
- 
-    background-color: white;
-    /* margin-left: 25%; */
-    margin: 5%;
-    border-radius: 5px;
-     
- }
- .drag-item1{
-    height: 200px;
+
+.drag-item1{
+    height: 150px;
     width: 200px;
     margin: 10px;
     /* margin-left: 20%; */
@@ -70,26 +42,67 @@
   background-position: center;
   border: 2px solid white;
   box-shadow:3px 1px #888888;
+  margin-bottom:5px;
+  opacity: 0.6;
  }
 
-  
-
- .play-box{
-   
-  height: 200px;
+.play-box{
+   height: 200px;
   width: 200px;
   background-color: white;
   /* margin-left: 25%; */
-  margin: 5%;
-  border-radius: 5px; border: 2px solid white;
+  margin-top: 5%;
+  margin: 5px;
+  border-radius: 5px;
+  display:inline-block;
   box-shadow:5px 1px #888888;
- }
+ 
+  }
  .droppable{
- 
-    height: 500px;
-    width: 80%;
-    overflow: scroll;
-    overflow-x: hidden;
-  
- 
+   height: 500px;
+   width: 80%;
+  border-right: 4px solid white;
+  }
+
+ .position{
+  display: flex;
+  justify-content: center;
  }
+
+.dragLeave{
+  border: 2px dotted red;
+}
+
+.dragEnter{
+  border: 2px dotted green ;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .slides{
+    width:30%;
+  }
+  .droppable{
+    width: 40%;
+  }
+  .drag-item{
+    width: 80px;
+    height:80px;
+    margin:5px;
+    overflow-y: scroll;
+  }
+  .drag-item1{
+    width: 80px;
+    height:80px;
+    margin:5px;
+    overflow-y: scroll;
+  }
+  .play-box{
+width: 100px;
+height: 100px;
+margin:3px;
+display: flex;
+flex-direction: column;
+margin-right: 10px;
+  }
+}
