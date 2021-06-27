@@ -23,6 +23,7 @@ ngAfterViewInit() {
 //drag images
      let dragItem1= this.elementRef.nativeElement.querySelector('.drag-item1');
      dragItem1.addEventListener('dragstart', this.ondragStart.bind(this)); 
+     dragItem1.addEventListener('dragover', this.onDragOver.bind(this)); 
       
 }
  
@@ -44,13 +45,12 @@ ondrageEnter(event){
   event.target.classList.add("dragEnter")
 }
 
+//function for  dropover event
 onDragOver(event){
-  
   event.preventDefault();
 }
-
  
-
+//function for drop event
 onDrop(ev){
   ev.preventDefault();
   // Get the data, which is the id of the drop target
@@ -70,13 +70,6 @@ onDrop(ev){
  if(ev.target.classList.contains("dropped") && data === "img1" || "img2" || "img3" || "img4" || "img5" || "img6" ){
    var id =document.getElementById(data)
   ev.target.appendChild(id);
- 
- 
- }
-  
-}
- 
- 
- }
+ } } }
 
  
